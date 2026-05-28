@@ -104,11 +104,40 @@ class Circle extends Drawable {
     }
 }
 
+class FreeformShape extends Drawable {
+    constructor(x, y, fillStyle = 'purple', points = []) {
+        super(x, y);
+        this.points = points;
+        this.fillStyle = fillStyle;
+    }
+
+    addPoint(x, y) {
+        this.points.push({ x, y });
+    }
+
+    draw(ctx) {
+        if (!this.points.length) return;
+
+        ctx.beginPath();
+        ctx.moveTo(this.x + this.points[0].x, this.y + this.points[0].y);
+
+        for (let i = 1; i < this.points.length; i++) {
+            const point = this.points[i];
+            ctx.lineTo(this.x + point.x, this.y + point.y);
+        }
+
+        ctx.closePath();
+        ctx.fillStyle = this.fillStyle;
+        ctx.fill();
+    }
+}
+
 window.gameCanvas = new GameCanvas();
 window.GameCanvas = GameCanvas;
 window.Drawable = Drawable;
 window.Rect = Rect;
 window.Circle = Circle;
+window.FreeformShape = FreeformShape;
 
 // Beispiel: Objekte hinzufügen und die Zeichen-Schleife starten.
 // const player = new Rect(100, 100, 80, 80, 'deepskyblue');

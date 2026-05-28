@@ -16,20 +16,33 @@
         <div id="main-menu" class="screen">
             <h1>MAIN MENU</h1>
 
-            <button onclick="showScreen('game-screen')">
-                Start Game
+            <button onclick="showScreen('game-menu')">
+                new Game
             </button>
-
+            
+            <button onclick="alert('Load Game not implemented yet!')">
+                Load Game
+            </button>
+        
             <button onclick="showScreen('skill-tree')">
                 Skill Tree
             </button>
         </div>
 
-        <div id="game-screen" class="screen hidden">
-            <h1>GAME UI</h1>
+        <div id="game-menu" class="screen hidden">
+            <h1>Game Menu</h1>
             <button onclick="showScreen('main-menu')">
                 Back to Menu
             </button>
+
+            <button id="next-wave" onclick="showScreen('game-screen')">Wave</button>
+
+            <div id ="game-screen" class="screen hidden">
+                <h1>GAME UI</h1>
+                <button onclick="showScreen('main-menu')">
+                    Back to Menu
+                </button>
+            </div>
         </div>
 
         <div id="skill-tree" class="screen hidden">
