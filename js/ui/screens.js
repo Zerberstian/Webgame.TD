@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     newGameButton.addEventListener("click", () => showScreen("game-menu"));
     loadGameButton.addEventListener("click", () => alert("Load Game - Funktion noch nicht implementiert"));
-    skillTreeButton.addEventListener("click", () => showScreen("skill-tree"));
+    skillTreeButton.addEventListener("click", () => showScreen("skill-tree-screen"));
     backToMenuButton.addEventListener("click", () => showScreen("main-menu"));
     backToMenuButton2.addEventListener("click", () => showScreen("main-menu"));
     waveButton.addEventListener("click", () => showScreen("game-screen"));
