@@ -16,5 +16,19 @@ function showScreen(id) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    const newGameButton = document.getElementById("new-game");
+    const loadGameButton = document.getElementById("load-game");
+    const skillTreeButton = document.getElementById("skill-tree");
+    const backToMenuButton = document.getElementById("back-to-menu");
+    const backToMenuButton2 = document.getElementById("back-to-menu-button");
+    const waveButton = document.getElementById("wave");
+
+    newGameButton.addEventListener("click", () => showScreen("game-menu"));
+    loadGameButton.addEventListener("click", () => alert("Load Game - Funktion noch nicht implementiert"));
+    skillTreeButton.addEventListener("click", () => showScreen("skill-tree"));
+    backToMenuButton.addEventListener("click", () => showScreen("main-menu"));
+    backToMenuButton2.addEventListener("click", () => showScreen("main-menu"));
+    waveButton.addEventListener("click", () => showScreen("game-screen"));
+
     showScreen("main-menu");
 });
