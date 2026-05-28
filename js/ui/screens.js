@@ -18,7 +18,7 @@ function showScreen(id) {
 document.addEventListener("DOMContentLoaded", () => {
     const newGameButton = document.getElementById("new-game");
     const loadGameButton = document.getElementById("load-game");
-    const skillTreeButton = document.getElementById("skill-tree");
+    const skillTreeButton = document.getElementById("skill-tree-button");
     const backToMenuButton = document.getElementById("back-to-menu");
     const backToMenuButton2 = document.getElementById("back-to-menu-button");
     const waveButton = document.getElementById("wave");
