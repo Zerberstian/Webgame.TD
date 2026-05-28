@@ -17,9 +17,10 @@ function initGame() {
     const shape1 = new FreeformShape(400, 400, 'rgb(0, 255, 0)');
     shape1.addPoint(0, 0);
     shape1.addPoint(5, -30);
-    shape1.addPoint(100, 0);
+    shape1.addPoint(200, -50);
     shape1.addPoint(80, 50);
-    shape1.addPoint(20, 50);
+    shape1.addPoint(10, 50);
+    shape1.addPoint(111, -10); // Schließe die Form
 
     // Registriere Objekte bei Canvas zum Zeichnen
     //gameCanvas.add(toper1);
