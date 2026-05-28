@@ -14,16 +14,16 @@ function initGame() {
 
     
     // Beispiel: freie Form
-    //const shape1 = new FreeformShape(400, 400, 'purple');
-    //shape1.addPoint(0, 0);
-    //shape1.addPoint(50, -30);
-    //shape1.addPoint(100, 0);
-    //shape1.addPoint(80, 50);
-    //shape1.addPoint(20, 50);
+    const shape1 = new FreeformShape(400, 400, 'rgb(0, 255, 0)');
+    shape1.addPoint(0, 0);
+    shape1.addPoint(5, -30);
+    shape1.addPoint(100, 0);
+    shape1.addPoint(80, 50);
+    shape1.addPoint(20, 50);
 
     // Registriere Objekte bei Canvas zum Zeichnen
     //gameCanvas.add(toper1);
-    //gameCanvas.add(shape1);
+    gameCanvas.add(shape1);
 
     gameInitialized = true;
 }
