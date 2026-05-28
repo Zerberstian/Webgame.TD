@@ -16,11 +16,11 @@ function initGame() {
     // Beispiel: freie Form
     const shape1 = new FreeformShape(400, 400, 'rgb(0, 255, 0)');
     shape1.addPoint(0, 0);
-    shape1.addPoint(2, -15);
-    shape1.addPoint(100, -25);
-    shape1.addPoint(40, 25);
-    shape1.addPoint(5, 25);
-    shape1.addPoint(55, -5); // Schließe die Form
+    shape1.addPoint(1, -7.5);
+    shape1.addPoint(50, -12.5);
+    shape1.addPoint(20, 12.5);
+    shape1.addPoint(2.5, 12.5);
+    shape1.addPoint(27.5, -2.5); // Schließe die Form
 
     // Registriere Objekte bei Canvas zum Zeichnen
     //gameCanvas.add(toper1);
