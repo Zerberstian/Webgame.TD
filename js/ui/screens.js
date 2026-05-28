@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const loadGameButton = document.getElementById("load-game");
     const skillTreeButton = document.getElementById("skill-tree-button");
     const backToMenuButton = document.getElementById("back-to-menu");
-    const backToMenuButton2 = document.getElementById("back-to-menu-button");
+    const backToMenuButton2 = document.getElementById("back-to-menu-gs");
+    const backToMenuButton3 = document.getElementById("back-to-menu-st");
     const waveButton = document.getElementById("wave");
 
     // Verbinde Buttons mit showScreen()
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     skillTreeButton.addEventListener("click", () => showScreen("skill-tree-screen"));
     backToMenuButton.addEventListener("click", () => showScreen("main-menu"));
     backToMenuButton2.addEventListener("click", () => showScreen("main-menu"));
+    backToMenuButton3.addEventListener("click", () => showScreen("main-menu"));
     waveButton.addEventListener("click", () => showScreen("game-screen"));
 
     // Starte mit Hauptmenü
