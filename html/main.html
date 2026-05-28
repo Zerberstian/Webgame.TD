@@ -8,46 +8,36 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <!-- Canvas Layer: Zeichen-Fläche für Spielobjekte (wird per JS verborgen/angezeigt) -->
     <div id="canvas">
         <canvas id="game-canvas"></canvas>
     </div>
+    
+    <!-- UI Layer: Menü und Screens (liegt über Canvas mit z-index) -->
     <div id="ui">
 
+        <!-- Hauptmenü: Startbildschirm -->
         <div id="main-menu" class="screen">
             <h1>MAIN MENU</h1>
-
-            <button id="new-game">
-                new Game
-            </button>
-            
-            <button id="load-game">
-                Load Game
-            </button>
-        
-            <button id="skill-tree-button">
-                Skill Tree
-            </button>
+            <button id="new-game">new Game</button>
+            <button id="load-game">Load Game</button>
+            <button id="skill-tree-button">Skill Tree</button>
         </div>
 
+        <!-- Spielmenü: Zwischenschirm vor dem eigentlichen Gameplay -->
         <div id="game-menu" class="screen hidden">
             <h1>Game Menu</h1>
-            <button id="back-to-menu" onclick="showScreen('main-menu')">
-                Back to Menu
-            </button>
-
-            <button id="wave" onclick="showScreen('game-screen')">
-                Wave
-            </button>
-
+            <button id="back-to-menu" onclick="showScreen('main-menu')">Back to Menu</button>
+            <button id="wave" onclick="showScreen('game-screen')">Wave</button>
         </div>
 
-        <div id ="game-screen" class="screen hidden">
+        <!-- Spielscreen: Canvas + UI werden hier angezeigt -->
+        <div id="game-screen" class="screen hidden">
             <h1>GAME UI</h1>
-            <button id="back-to-menu-button" onclick="showScreen('main-menu')">
-                Back to Menu
-            </button>
+            <button id="back-to-menu-button" onclick="showScreen('main-menu')">Back to Menu</button>
         </div>
 
+        <!-- Skilltree: Upgrades und Verbesserungen -->
         <div id="skill-tree-screen" class="screen hidden">
             <h1>SKILL TREE</h1>
             <ul>
@@ -55,9 +45,7 @@
                 <li>Upgrade 2</li>
                 <li>Upgrade 3</li>
             </ul>
-            <button id="back-to-menu" onclick="showScreen('main-menu')">
-                Back to Menu
-            </button>
+            <button id="back-to-menu" onclick="showScreen('main-menu')">Back to Menu</button>
         </div>
 
     </div>

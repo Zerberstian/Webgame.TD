@@ -1,3 +1,4 @@
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -5,53 +6,52 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: hidden; /* Kein Scrollen erlaubt (Spiel füllt Fenster) */
     background: black;
     font-family: Arial, sans-serif;
 }
 
-/* Canvas */
+/* ===== CANVAS LAYER ===== */
+/* Spielfeld: Hintergrund für Grafiken */
 #game-canvas {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100vw;
     height: 100vh;
-
     background: #222;
-
-    z-index: 0;
-
-    pointer-events: none;
+    z-index: 0; /* Hinter UI */
+    pointer-events: none; /* Blockiert keine Mouse-Events */
 }
 
+/* ===== UI LAYER ===== */
+/* Menü-Container: liegt über Canvas */
 #ui {
     position: fixed;
-    inset: 0;
-
-    z-index: 10;
+    inset: 0; /* Füllt ganzen Screen */
+    z-index: 10; /* Über Canvas */
 }
 
+/* ===== SCREENS ===== */
+/* Jeder Screen (Menü, Spielscreen, etc.) */
 .screen {
     position: absolute;
-    inset: 0;
-
+    inset: 0; /* Füllt UI-Container */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Vertikal stapeln */
     justify-content: center;
     align-items: center;
     gap: 20px;
-
-    background: rgba(0,0,0,0.5);
-
+    background: rgba(0,0,0,0.5); /* Halb-transparent */
     color: white;
 }
 
+/* ===== UTILITY ===== */
 .hidden {
-    display: none;
+    display: none; /* Verstecke Screens per CSS */
 }
 
+/* Button-Stil */
 button {
     min-width: 150px;
     padding: 12px 24px;
