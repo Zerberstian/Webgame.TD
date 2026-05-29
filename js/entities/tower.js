@@ -1,3 +1,5 @@
+console.log("Tower class loaded");
+
 class Tower {
     constructor(type, range, position) {
         this.type = type; // Turmtyp (z.B. "basic", "sniper", "cannon")

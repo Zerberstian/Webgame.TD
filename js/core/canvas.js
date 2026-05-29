@@ -1,3 +1,4 @@
+console.log("Canvas management loaded");
 // ===== CANVAS-VERWALTUNG =====
 // Zentrale Klasse für alle Zeichnungsvorgänge und Objektverwaltung
 class GameCanvas {

@@ -1,5 +1,5 @@
 // ===== SPIELLOGIK =====
-console.log("JS LOADED");
+console.log("main.js loaded");
 
 // Flag verhindert mehrfache Initialisierung
 let gameInitialized = false;
@@ -16,11 +16,11 @@ function initGame() {
     // Beispiel: freie Form
     const shape1 = new FreeformShape(400, 400, 'rgb(0, 255, 0)');
     shape1.addPoint(0, 0);
-    shape1.addPoint(1, -7.5);
-    shape1.addPoint(50, -12.5);
-    shape1.addPoint(20, 12.5);
-    shape1.addPoint(2.5, 12.5);
-    shape1.addPoint(27.5, -2.5); // Schließe die Form
+    shape1.addPoint(0.5, -3.75);
+    shape1.addPoint(25, -6.25);
+    shape1.addPoint(10, 6.25);
+    shape1.addPoint(1.25, 6.25);
+    shape1.addPoint(13.75, -1.25); // Schließe die Form
 
     // Registriere Objekte bei Canvas zum Zeichnen
     //gameCanvas.add(toper1);

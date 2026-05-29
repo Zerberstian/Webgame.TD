@@ -1,3 +1,4 @@
+console.log("Screens management loaded");
 // Zeigt den angeforderten Screen an und versteckt alle anderen
 function showScreen(id) {
     // Alle Screens ausblenden

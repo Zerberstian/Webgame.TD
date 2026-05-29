@@ -1,4 +1,3 @@
-// added later
 console.log("enemy.js loaded");
 
 class Enemy {
